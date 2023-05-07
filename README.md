@@ -1,6 +1,6 @@
 # Used things
 ### Frontend
-- React
+- React, Typescript
 ### Backend
 - Express.js
 - login(OAuth, JWT)
