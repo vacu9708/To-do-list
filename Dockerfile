@@ -9,8 +9,8 @@ COPY client/package*.json ./client/
 COPY server/package*.json ./server/
 
 # Install dependencies for both the client and server
-RUN cd client && npm install
-RUN cd server && npm install
+#RUN cd client && npm install
+#RUN cd server && npm install
 
 # Copy the client and server source code to the working directory
 COPY client/ ./client/
