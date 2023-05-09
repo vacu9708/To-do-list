@@ -9,7 +9,7 @@ const routes=require("./routes/routes.js");
 app.use(cors());
 app.use((bodyParser.json()));
 app.use(bodyParser.urlencoded({ extended: false }));
-//app.use(express.static(path.join(__dirname, '..', 'client/build'))) // React build
+app.use(express.static(path.join(__dirname, '../client/build'))) // React build
 app.use('/uploads/images', express.static(path.join(__dirname,'uploads/images')))
 app.use('/resources',express.static(path.join(__dirname,'resources')))
 app.use('/', routes)
@@ -20,7 +20,8 @@ const connectionParams = {
   useCreateIndex: true,
   useUnifiedTopology: true,
 };
-mongoose.connect('mongodb://localhost:27017/auth_todo2', connectionParams);
+const DB_address=process.env.DB_address
+mongoose.connect(`mongodb://${DB_address || 'localhost:27017'}/auth_todo2`, connectionParams);
 
 const port = process.env.PORT || 4000;
 app.listen(port, (err) => {
