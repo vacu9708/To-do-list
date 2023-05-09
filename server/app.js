@@ -9,7 +9,7 @@ const routes=require("./routes/routes.js");
 app.use(cors());
 app.use((bodyParser.json()));
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, '../client/build'))) // React build
+app.use(express.static(path.join(__dirname, '../client/build'))) // To allow clients to search built react
 app.use('/uploads/images', express.static(path.join(__dirname,'uploads/images')))
 app.use('/resources',express.static(path.join(__dirname,'resources')))
 app.use('/', routes)

@@ -41,7 +41,7 @@ router.patch('/todoIsCompleted/:todoId', controller.patch_is_completed)
 router.patch('/todoTitle/:todoId', controller.patch_todo_title)
 router.delete("/todo/:todoId", controller.delete_todo)
   
-router.get('/*', function(req, res) { // React router
+router.get('/*', function(req, res) { // Serve react index
     res.sendFile(path.join(__dirname, '../../client/build/index.html'), err=>{
         if (err) 
             res.status(500).send(err)
