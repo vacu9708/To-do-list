@@ -11,6 +11,9 @@
 - AWS EC2
 - Jenkins
 
+## CI/CD architecture
+![image](https://github.com/vacu9708/To-do-list/assets/67142421/e62328d7-28ff-407b-83af-181141defb73)
+
 ## Log in page (OAuth with Naver included)
 ![image](https://user-images.githubusercontent.com/67142421/236621776-77935f93-afbc-4670-bd72-7c3b288fb476.png)
 
