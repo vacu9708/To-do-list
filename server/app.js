@@ -21,7 +21,7 @@ const connectionParams = {
   useUnifiedTopology: true,
 };
 const DB_address=process.env.DB_address
-mongoose.connect(`mongodb://${DB_address || 'localhost:27017'}/auth_todo2`, connectionParams);
+mongoose.connect(`mongodb://${DB_address || 'localhost:27017'}/auth_todo`, connectionParams);
 
 const port = process.env.PORT || 4000;
 app.listen(port, (err) => {
