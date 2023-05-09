@@ -26,7 +26,7 @@ const login= (req,res) => {
   User.findOne({userID: req.body.userID})
   .then(user=>{
     if (!user)
-      return res.status(401).json({error: 'Invalid username'})
+      return res.status(401).json({error: 'Invalid username!!'})
     if (!bcrypt.compareSync(req.body.password, user.password))
       return res.status(401).json({error: 'Invalid password'})
 
