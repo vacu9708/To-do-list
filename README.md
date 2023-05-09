@@ -6,6 +6,9 @@
 - login(OAuth, JWT)
 - Image upload(using the form transmission)
 - mongoDB
+### other tools
+- docker
+- AWS EC2
 
 ## Log in page (OAuth with Naver included)
 ![image](https://user-images.githubusercontent.com/67142421/236621776-77935f93-afbc-4670-bd72-7c3b288fb476.png)
