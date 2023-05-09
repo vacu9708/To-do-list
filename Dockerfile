@@ -5,15 +5,15 @@ FROM node:16
 WORKDIR /app
 
 # Copy the package.json and package-lock.json files to the working directory
-#COPY client/package*.json /app/client/
+COPY client/package*.json /app/client/
 COPY server/package*.json /app/server/
 
 # Install dependencies for both the client and server
-#RUN cd client && npm install
+RUN cd client && npm install
 RUN cd server && npm install
 
 # Copy the client and server source code to the working directory
-#COPY client/ /app/client/
+COPY client/ /app/client/
 COPY server/ /app/server/
 
 # Build the client code
