@@ -34,7 +34,7 @@ const callback = async (req, res) => { // 네이버 로그인 완료시 callback
     // Check if registered
     User.findOne({ userID: profile.email })
     .then(async user => {
-      // If not registered, register the new user, send token and redirect to dashboard
+      // If not registered, register the new user
       if(!user){
         const newUser = new User({ // New document
           userID: profile.email,
@@ -44,6 +44,7 @@ const callback = async (req, res) => { // 네이버 로그인 완료시 callback
         });
         await newUser.save()
       }
+      // Send token
       let token = jwt.sign({ userID: profile.email}, 'secretkey');
       return res.end(JSON.stringify({registered: "No", token: token}))
     })
