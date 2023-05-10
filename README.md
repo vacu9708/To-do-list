@@ -11,6 +11,9 @@
 - AWS EC2
 - Jenkins
 
+## Architecture
+![image](https://github.com/vacu9708/To-do-list/assets/67142421/574ddced-5f41-4cc3-b0e0-aaadd7f8b5e2)
+
 ## CI/CD architecture
 ![image](https://github.com/vacu9708/To-do-list/assets/67142421/abc1c0e4-453d-49bd-ad32-0e2233c766bb)
 
