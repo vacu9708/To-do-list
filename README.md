@@ -14,7 +14,7 @@
 ## Architecture
 ![image](https://github.com/vacu9708/To-do-list/assets/67142421/abc1c0e4-453d-49bd-ad32-0e2233c766bb)
 
-![image](https://github.com/vacu9708/To-do-list/assets/67142421/c4b6acfa-2208-4cdb-927a-859ebb6b76db)
+![image](https://github.com/vacu9708/To-do-list/assets/67142421/f5423d11-fef5-4640-b78d-43249b9230a4)
 
 ## Log in page (OAuth with Naver included)
 ![image](https://user-images.githubusercontent.com/67142421/236621776-77935f93-afbc-4670-bd72-7c3b288fb476.png)
