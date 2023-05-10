@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, '../client/build'))) // To allow clients to search built react
 app.use('/uploads/images', express.static(path.join(__dirname,'uploads/images')))
 app.use('/resources',express.static(path.join(__dirname,'resources')))
-app.use('/', routes)
+//app.use('/', routes)
 
 // MongoDB connection
 const connectionParams = {
@@ -29,3 +29,4 @@ app.listen(port, (err) => {
     return console.log(err);
   console.log('Server running on port31: ', port);
 });
+routes.init(app)
