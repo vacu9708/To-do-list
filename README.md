@@ -12,10 +12,9 @@
 - Jenkins
 
 ## Architecture
-![image](https://github.com/vacu9708/To-do-list/assets/67142421/574ddced-5f41-4cc3-b0e0-aaadd7f8b5e2)
-
-## CI/CD architecture
 ![image](https://github.com/vacu9708/To-do-list/assets/67142421/abc1c0e4-453d-49bd-ad32-0e2233c766bb)
+
+![image](https://github.com/vacu9708/To-do-list/assets/67142421/574ddced-5f41-4cc3-b0e0-aaadd7f8b5e2)
 
 ## Log in page (OAuth with Naver included)
 ![image](https://user-images.githubusercontent.com/67142421/236621776-77935f93-afbc-4670-bd72-7c3b288fb476.png)
