@@ -17,19 +17,18 @@ const callback = async (req, res) => { // 네이버 로그인 완료시 callback
   const code = req.query.code;
   console.log(code)
   let uri= 'https://nid.naver.com/oauth2.0/token?grant_type=authorization_code&client_id='
-      + env.client_id + '&client_secret=' + env.client_secret + '&code=' + code + '&state=' + state;
+      + env.client_id + '&client_secret=' + env.client_secret + '&code=' + code + '&state=' + state; // For sending a request for client's Naver token
   let headers={'X-Naver-Client-Id': env.client_id, 'X-Naver-Client-Secret': env.client_secret}
-  axios.get(uri, {headers: headers})
-  .then(res2=>{
-    const parsed_token=res2.data
+  axios.get(uri, {headers: headers}) // Get client's naver token from
+  .then(res=>{
+    const parsed_token=res.data
     uri= 'https://openapi.naver.com/v1/nid/me',
     headers= {'Authorization': `bearer ${parsed_token.access_token}`}
     //console.log(parsed_token)
-    return axios.get(uri, {headers: headers})
+    return axios.get(uri, {headers: headers}) // Get client's Naver profile by using the Naver token
   })
-  // Get naver profile by using naver token and finish login
-  .then(res2=>{
-    let profile=res2.data.response // naver profile
+  .then(res=>{
+    let profile=res.data.response // naver profile
     res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8'});
     // Check if registered
     User.findOne({ userID: profile.email })
@@ -44,7 +43,7 @@ const callback = async (req, res) => { // 네이버 로그인 완료시 callback
         });
         await newUser.save()
       }
-      // Send token
+      // Send JWT
       let token = jwt.sign({ userID: profile.email}, 'secretkey');
       return res.end(JSON.stringify({registered: "No", token: token}))
     })
