@@ -20,7 +20,7 @@
 ### OAuth
 ![image](https://github.com/vacu9708/Fundamental-knowledge/assets/67142421/d3839134-4bc5-415c-b256-d215910c6a86)
 
-## Log in page (OAuth with Naver included)
+## Log in page 
 ![image](https://user-images.githubusercontent.com/67142421/236621776-77935f93-afbc-4670-bd72-7c3b288fb476.png)
 
 ## Sign up page
