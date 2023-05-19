@@ -13,19 +13,18 @@ const login = async (req, res) => { // 네이버로 login
 }
 
 const callback = async (req, res) => { // 네이버 로그인 완료시 callback
-  // Get token
-  const code = req.query.code;
+  const code = req.query.code; // Code to retrieve client's Naver token
   console.log(code)
   let uri= 'https://nid.naver.com/oauth2.0/token?grant_type=authorization_code&client_id='
       + env.client_id + '&client_secret=' + env.client_secret + '&code=' + code + '&state=' + state; // For sending a request for client's Naver token
   let headers={'X-Naver-Client-Id': env.client_id, 'X-Naver-Client-Secret': env.client_secret}
-  axios.get(uri, {headers: headers}) // Get client's naver token from
+  axios.get(uri, {headers: headers}) // Get client's Naver token
   .then(res=>{
     const parsed_token=res.data
     uri= 'https://openapi.naver.com/v1/nid/me',
     headers= {'Authorization': `bearer ${parsed_token.access_token}`}
     //console.log(parsed_token)
-    return axios.get(uri, {headers: headers}) // Get client's Naver profile by using the Naver token
+    return axios.get(uri, {headers: headers}) // Get client's Naver profile using the Naver token
   })
   .then(res=>{
     let profile=res.data.response // naver profile

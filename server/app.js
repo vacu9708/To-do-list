@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const path = require('path')
 const routes=require("./routes/routes.js");
 
-app.use(cors());
+app.use(cors()); // allows all cross-origin requests from any domain. (comfortable but security implications)
 app.use((bodyParser.json()));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, '../client/build'))) // To allow clients to search built react
