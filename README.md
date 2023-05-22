@@ -26,9 +26,6 @@
 ## Sign up page
 ![image](https://user-images.githubusercontent.com/67142421/175507815-b1c1f0af-87f4-430e-8dc9-c3a955ad5e68.png)
 
-## To-do list page
-![image](https://github.com/vacu9708/To-do-list/assets/67142421/4a981b92-153b-4940-a9d4-201ce57475a7)
-
 ## Editing a to-do's title
 ![image](https://user-images.githubusercontent.com/67142421/175510209-ba0159b7-e40d-499d-bb48-9f5b78d28579.png)
 
