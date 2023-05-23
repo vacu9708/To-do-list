@@ -35,5 +35,5 @@
 ![image](https://user-images.githubusercontent.com/67142421/175508254-803abf59-0364-4b46-b0c3-7207ce1b8996.png)
  
  # Future plans
- - Think about preventing CSRF, XSS attacks
+ - There are security issues. It is row ID not userID that should be stored in the JWT. Also Think about preventing CSRF, XSS attacks
  - Deprecating node.js code and rewriting all the code in spring boot
