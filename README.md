@@ -18,7 +18,7 @@
 ![image](https://github.com/vacu9708/To-do-list/assets/67142421/f5423d11-fef5-4640-b78d-43249b9230a4)
 
 ### OAuth
-![image](https://github.com/vacu9708/To-do-list/assets/67142421/0d73c9b6-ad42-4e6b-811c-1b12d98c1ad5)
+[Architecture](https://github.com/vacu9708/Fundamental-knowledge/tree/main/Web%20development/Auth/OAuth)
 
 ## Log in page 
 ![image](https://user-images.githubusercontent.com/67142421/236621776-77935f93-afbc-4670-bd72-7c3b288fb476.png)
